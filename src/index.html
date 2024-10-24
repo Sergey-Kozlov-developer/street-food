@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+    @@include("html/components/layout/head.html", { title: "Good Food",
+    multistyles: false, description: "© Food" })
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                @@include("html/components/blocks/wrapper/header.html", {})
+            </div>
+            <main class="main container">
+                @@include("html/components/blocks/home/restaurant.html")
+            </main>
+            @@include("html/components/blocks/wrapper/footer.html", {})
+        </div>
+        @@include("html/components/layout/js.html", {filename: "script.min"})
+    </body>
+</html>
