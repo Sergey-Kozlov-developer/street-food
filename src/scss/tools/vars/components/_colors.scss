@@ -18,9 +18,14 @@ $blackTransparent: rgba(0, 0, 0, 0.4);
 $lightBlackTransparent: rgba(5, 5, 5, 0.502);
 
 //==========================================Настройки===============================================//
-
+$font-famaly: "Gilroy";
+$fontGilroy: "Gilroy";
 // Цвет текста по-умолчанию
 $defaultTextColor: $black;
+// оранжевый цвет заголовка
+$orangeTextColor: #ff9401;
+// btn
+$orangeBackGroundBtn: #ff9401;
 
 // Цвет бургера
 $burgerColor: $blueDark;
