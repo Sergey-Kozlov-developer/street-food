@@ -8,8 +8,11 @@
             <div class="container">
                 @@include("html/components/blocks/wrapper/header.html", {})
             </div>
-            <main class="main container">
-                @@include("html/components/blocks/home/restaurant.html")
+            <main class="main">
+                <div class="container">
+                    @@include("html/components/blocks/home/restaurant.html")
+                </div>
+                @@include("html/components/blocks/about/about.html")
             </main>
             @@include("html/components/blocks/wrapper/footer.html", {})
         </div>

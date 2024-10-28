@@ -1,0 +1,94 @@
+@use "./../../../tools/functions/index" as *;
+@use "../../../tools/vars/index" as *;
+@use "../../../tools/mixins/index" as *;
+
+.section__about {
+    // position: relative;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 148, 1, 0.05) 0%,
+        rgba(255, 237, 211, 0) 100%
+    );
+    // width: 100%;
+    // margin: 0 auto;
+}
+.about {
+    // position: absolute;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 148, 1, 0.05) 0%,
+        rgba(255, 237, 211, 0) 100%
+    );
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(40px);
+    background-color: #fffefc;
+}
+.about__left {
+    margin-top: 140px;
+    width: rem(560px);
+}
+.about__menu {
+    display: flex;
+    justify-content: start;
+    gap: rem(5px);
+    align-items: center;
+    color: $orangeTextColor;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+.line {
+    margin-bottom: rem(10px); // Уменьшите отступ снизу, если нужно
+}
+
+.about__title {
+    color: #232323;
+    font-family: $font-famaly;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    // line-height: 60px; /* 115.385% */
+    @include fontface("Gilroy", "Gilroy-ExtraBold", 800, normal);
+}
+.about_subtitle {
+    margin-top: rem(13px);
+    color: #3f3232;
+    font-family: $font-famaly;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+}
+.btn {
+    margin-top: rem(44px);
+    color: #fff;
+    font-family: $font-famaly;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    text-transform: capitalize;
+    width: 243px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    background: $orangeBackGroundBtn;
+    box-shadow: $shadowBtn;
+}
+
+.about__right {
+    // box-shadow: $shadowBtn;
+    // width: 476px;
+    // height: 436px;
+    // transform: rotate(-23.902deg);
+    // flex-shrink: 0;
+}
+.img {
+    // object-fit: cover;
+    margin-top: -120px;
+    margin-left: -150px;
+}
