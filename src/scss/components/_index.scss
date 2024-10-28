@@ -4,6 +4,8 @@
 // ? Подключение шрифтов
 @forward "layout/fonts";
 
+// подключение стилей кнопки
+@forward "../components/elements/button";
 // ? Подключение кастомного обнуления
 @forward "../tools/zeroing/nullstyle";
 
@@ -17,6 +19,8 @@
 @forward "blocks/reataurant/restaurant";
 // подключение about
 @forward "blocks/about/about";
+// подключение features
+@forward "blocks/features/features";
 
 // ? Подключение стилей main
 @forward "blocks/wrapper/main";

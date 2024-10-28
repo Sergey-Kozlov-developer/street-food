@@ -1,0 +1,68 @@
+@use "../../../tools/mixins/index" as *;
+// @use "../../../tools/functions/index" as *;
+
+.wrapper__features {
+    position: relative;
+    margin-top: 62px;
+}
+.img__left {
+    position: absolute;
+    top: -110px;
+    left: 0;
+}
+.img__right {
+    position: absolute;
+    top: -160px;
+    right: 0;
+}
+.feature {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service {
+    color: #2e2e2e;
+    font-family: Gilroy;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 57px;
+}
+.delivery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 118px;
+    margin-bottom: 110px;
+}
+.delivery__service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // align-content: center;
+    justify-content: center;
+    width: 245px;
+    img {
+        padding-bottom: 57px;
+        width: 90px;
+    }
+}
+.service__name {
+    color: #2e2e2e;
+    padding-bottom: 20px;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    @include fontface("Gilroy", "Gilroy-ExtraBold", 700, normal);
+}
+.service__text {
+    color: #3f3232;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    @include fontface("Gilroy", "Gilroy-Light", 100, normal);
+}

@@ -1,0 +1,24 @@
+@use "../../tools/functions/index" as *;
+@use "../../tools/vars/index" as *;
+@use "../../tools/mixins/index" as *;
+
+.btn {
+    margin-top: rem(44px);
+    color: #fff;
+    font-family: $font-famaly;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    text-transform: capitalize;
+    width: 243px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    background: $orangeBackGroundBtn;
+    box-shadow: $shadowBtn;
+    transition: scale 0.4s ease-in-out;
+    &:hover {
+        scale: 1.1;
+    }
+}

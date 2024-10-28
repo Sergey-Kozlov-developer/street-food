@@ -63,22 +63,6 @@
     font-weight: 400;
     line-height: 160%; /* 32px */
 }
-.btn {
-    margin-top: rem(44px);
-    color: #fff;
-    font-family: $font-famaly;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px; /* 150% */
-    text-transform: capitalize;
-    width: 243px;
-    height: 62px;
-    flex-shrink: 0;
-    border-radius: 31px;
-    background: $orangeBackGroundBtn;
-    box-shadow: $shadowBtn;
-}
 
 .about__right {
     // box-shadow: $shadowBtn;

@@ -11,17 +11,7 @@
 .home__left {
     width: rem(590px);
 }
-.home__menu {
-    display: flex;
-    justify-content: start;
-    gap: rem(5px);
-    align-items: center;
-    color: $orangeTextColor;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-}
+
 .line {
     margin-bottom: rem(10px); // Уменьшите отступ снизу, если нужно
 }
@@ -49,22 +39,7 @@
     font-weight: 400;
     line-height: 160%; /* 32px */
 }
-.btn {
-    margin-top: rem(44px);
-    color: #fff;
-    font-family: $font-famaly;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px; /* 150% */
-    text-transform: capitalize;
-    width: 243px;
-    height: 62px;
-    flex-shrink: 0;
-    border-radius: 31px;
-    background: $orangeBackGroundBtn;
-    box-shadow: $shadowBtn;
-}
+
 .social {
     margin-top: rem(60px);
     display: flex;
