@@ -22,6 +22,9 @@
 // подключение features
 @forward "blocks/features/features";
 
+// подключение recipes
+@forward "blocks/recipes/recipes";
+
 // ? Подключение стилей main
 @forward "blocks/wrapper/main";
 

@@ -1,6 +1,8 @@
 @use "../../../tools/mixins/index" as *;
 // @use "../../../tools/functions/index" as *;
-
+.feature__block {
+    background-color: #fffefc;
+}
 .wrapper__features {
     position: relative;
     margin-top: 62px;
