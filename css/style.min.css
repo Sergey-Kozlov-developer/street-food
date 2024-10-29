@@ -412,6 +412,10 @@ h6 {
   margin-left: -150px;
 }
 
+.feature__block {
+  background-color: #fffefc;
+}
+
 .wrapper__features {
   position: relative;
   margin-top: 62px;
@@ -518,6 +522,151 @@ h6 {
   font-weight: 100;
   font-display: swap;
   font-style: normal;
+}
+
+.recipes__wrapper {
+  padding-top: 87px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 148, 1, 0.05)), to(rgba(255, 237, 211, 0)));
+  background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+}
+
+.recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipes__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 66px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipes__text {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipes__subtitle {
+  color: #2e2e2e;
+  font-family: Gilroy;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 57px;
+}
+
+.recipes__cards {
+  margin-bottom: 55px;
+  padding-top: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 54px;
+}
+
+.card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(255, 148, 1, 0.15);
+          box-shadow: 0px 20px 40px 0px rgba(255, 148, 1, 0.15);
+}
+
+.card__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 120px;
+  padding: 0 10px;
+}
+
+.card__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.card__title {
+  color: #2e2e2e;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card__btn {
+  width: 100px;
+  height: 22px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 15px;
+  background: rgba(196, 196, 196, 0.26);
+}
+
+.card__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.card__rating {
+  color: #818181;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.card__price {
+  color: #ff9401;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.padding {
+  margin-bottom: 25px;
 }
 
 .main {
