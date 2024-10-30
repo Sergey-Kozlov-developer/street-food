@@ -1,7 +1,7 @@
 [
-   { "title": "Пункт 1", "url": "#" },
-   { "title": "Пункт 2", "url": "#" },
-   { "title": "Пункт 3", "url": "#" },
-   { "title": "Пункт 4", "url": "#" },
-   { "title": "Пункт 5", "url": "#" }
+    { "title": "Home", "url": "#home" },
+    { "title": "About", "url": "#about" },
+    { "title": "Features", "url": "#features" },
+    { "title": "Recipes", "url": "#recipes" },
+    { "title": "Take away", "url": "#takeaway" }
 ]

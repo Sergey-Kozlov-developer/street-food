@@ -4,9 +4,19 @@
     &__body {
         height: 100%;
         @include mix.flex(space-between, center);
+        gap: 10px;
 
         @include mix.smalltablet {
             flex-direction: column;
+        }
+    }
+    &__item {
+        a {
+            color: #2e2e2e;
+            font-family: Gilroy;
+            font-size: 22px;
+            font-weight: 700;
+            // text-transform: lowercase;
         }
     }
 }
@@ -20,19 +30,13 @@
 
 .nav__name {
     color: #2e2e2e;
-    font-family: "Playfair Display";
+    font-family: Gilroy;
     font-size: 22px;
     font-weight: 700;
-    line-height: 30px; /* 136.364% */
     text-transform: lowercase;
-    // @include mix.fontface(
-    //     "Playfair Display",
-    //     "PlayfairDisplay-Bold",
-    //     600,
-    //     normal
-    // );
 }
 .nav__center {
+    padding-left: 180px;
 }
 .nav__icon {
     @include mix.flex(space-between, center);
