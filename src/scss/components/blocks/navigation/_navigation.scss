@@ -22,6 +22,13 @@
 }
 .nav {
     @include mix.flex(space-between, center);
+    position: fixed; /* Сделать навигацию фиксированной */
+    top: 0; /* Привязать к верхней части страницы */
+    left: 0; /* Привязать к левому краю */
+    width: 100%; /* Занимает полную ширину */
+    z-index: 1000; /* Обеспечить отображение поверх других элементов */
+    background-color: white; /* Цвет фона навигации */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Немного тени для эффекта подъема */
 }
 .nav__logo {
     @include mix.flex(space-between, center);

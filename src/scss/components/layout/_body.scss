@@ -8,7 +8,9 @@
 html {
     @extend %smoothscroll;
 }
-
+body {
+    padding-top: 70px; /* Отступ, чтобы навигация не перекрывала контент */
+}
 .wrapper {
     min-height: 100%;
     @include mix.flex(null, null, column);
