@@ -2,17 +2,17 @@ const delivery = document.querySelector(".delivery");
 
 const devileryListPage = [
     {
-        img: "../images/feature/food.png",
+        img: "images/feature/food.png",
         name: "Quality Food",
         text: "Keep healthy food readily available. When you get hungry, you’re more likely to",
     },
     {
-        img: "../images/feature/emojione.png",
+        img: "images/feature/emojione.png",
         name: "Super Taste",
         text: "Keep healthy food readily available. When you get hungry, you’re more likely to",
     },
     {
-        img: "../images/feature/truck.png",
+        img: "images/feature/truck.png",
         name: "Fast Delivery",
         text: "Keep healthy food readily available. When you get hungry, you’re more likely to",
     },
