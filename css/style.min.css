@@ -215,6 +215,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
 }
 @media (max-width: 768.5px) {
   .menu__body {
@@ -223,6 +224,12 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+.menu__item a {
+  color: #2e2e2e;
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .nav {
@@ -252,11 +259,14 @@ h6 {
 
 .nav__name {
   color: #2e2e2e;
-  font-family: "Playfair Display";
+  font-family: Gilroy;
   font-size: 22px;
   font-weight: 700;
-  line-height: 30px; /* 136.364% */
   text-transform: lowercase;
+}
+
+.nav__center {
+  padding-left: 180px;
 }
 
 .nav__icon {
