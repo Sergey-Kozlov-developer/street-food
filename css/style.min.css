@@ -187,6 +187,23 @@ h6 {
   padding-bottom: 13px;
 }
 
+.wrapper__img {
+  position: relative;
+  margin-top: 62px;
+}
+
+.img__left {
+  position: absolute;
+  top: -110px;
+  left: 0;
+}
+
+.img__right {
+  position: absolute;
+  top: -160px;
+  right: 0;
+}
+
 .menu__body {
   height: 100%;
   display: -webkit-box;
@@ -416,23 +433,6 @@ h6 {
   background-color: #fffefc;
 }
 
-.wrapper__features {
-  position: relative;
-  margin-top: 62px;
-}
-
-.img__left {
-  position: absolute;
-  top: -110px;
-  left: 0;
-}
-
-.img__right {
-  position: absolute;
-  top: -160px;
-  right: 0;
-}
-
 .feature {
   margin: 0 auto;
   display: -webkit-box;
@@ -522,6 +522,28 @@ h6 {
   font-weight: 100;
   font-display: swap;
   font-style: normal;
+}
+
+.takeaway {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 118px;
+}
+
+.takeaway__left {
+  margin-top: 131px;
+}
+
+.takeaway__right {
+  width: 450px;
 }
 
 .recipes__wrapper {
@@ -676,9 +698,150 @@ h6 {
 }
 
 .footer {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  padding-top: 83px;
+  padding-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 148, 1, 0.05)), to(rgba(255, 237, 211, 0)));
+  background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0) 100%);
+}
+
+.footer__img {
+  position: relative;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 171px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 23px;
+  padding-left: 46px;
+}
+
+.contact__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.contact__name {
+  color: #2e2e2e;
+  font-family: Gilroy;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 23px;
+}
+
+.email__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.email__site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.footer__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.footer__title {
+  color: #2e2e2e;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.footer__subtitle {
+  color: #6a5c5c;
+  font-family: "Circular Std";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 30px; /* 166.667% */
+  text-transform: capitalize;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active), (min-width: 0\0 ) {
