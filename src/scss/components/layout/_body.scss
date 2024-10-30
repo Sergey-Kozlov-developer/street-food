@@ -65,3 +65,17 @@ html {
     line-height: 30px;
     padding-bottom: 13px;
 }
+.wrapper__img {
+    position: relative;
+    margin-top: 62px;
+}
+.img__left {
+    position: absolute;
+    top: -110px;
+    left: 0;
+}
+.img__right {
+    position: absolute;
+    top: -160px;
+    right: 0;
+}
