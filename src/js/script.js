@@ -14,3 +14,4 @@ $plugins.colorSchemes.auto();
 $plugins.mobileCheck();
 $plugins.isAvifWebp({ mode: "webp" });
 // cardRecipes();
+$plugins.menu();

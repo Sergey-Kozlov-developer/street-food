@@ -9,7 +9,7 @@ html {
     @extend %smoothscroll;
 }
 body {
-    padding-top: 70px; /* Отступ, чтобы навигация не перекрывала контент */
+    padding-top: 80px; /* Отступ, чтобы навигация не перекрывала контент */
 }
 .wrapper {
     min-height: 100%;

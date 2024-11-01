@@ -20,7 +20,15 @@
         }
     }
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
     @include mix.flex(space-between, center);
     position: fixed; /* Сделать навигацию фиксированной */
     top: 0; /* Привязать к верхней части страницы */
