@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -136,6 +137,10 @@ h6 {
 }
 
 /*-------------------------------------------------------------------------------------------------*/
+body {
+  padding-top: 80px; /* Отступ, чтобы навигация не перекрывала контент */
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -232,7 +237,7 @@ h6 {
   font-weight: 700;
 }
 
-.nav {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,6 +247,28 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed; /* Сделать навигацию фиксированной */
+  top: 0; /* Привязать к верхней части страницы */
+  left: 0; /* Привязать к левому краю */
+  width: 100%; /* Занимает полную ширину */
+  z-index: 1000; /* Обеспечить отображение поверх других элементов */
+  background-color: white; /* Цвет фона навигации */
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Немного тени для эффекта подъема */
 }
 
 .nav__logo {
@@ -854,6 +881,96 @@ h6 {
   text-transform: capitalize;
 }
 
+[data-burger] {
+  display: none;
+}
+
+@media (max-width: 768.5px) {
+  [data-burger] {
+    display: inline-block;
+    position: relative;
+    top: 0.3571428571rem;
+    left: 0.3571428571rem;
+    width: 30px;
+    height: 24px;
+    z-index: 1002;
+  }
+  [data-burger]::before, [data-burger]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.2857142857rem;
+    border-radius: 0.2857142857rem;
+    background-color: var(--burger-color, #006363);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  [data-burger] span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0.2857142857rem;
+    border-radius: 0.2857142857rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: var(--burger-color, #006363);
+  }
+  [data-burger]::before {
+    top: 0;
+  }
+  [data-burger]::after {
+    bottom: 0;
+  }
+  [data-burger].active::before {
+    -webkit-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+  }
+  [data-burger].active::after {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg);
+    top: 50%;
+  }
+  [data-burger].active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+  [data-menu] {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow: auto;
+    visibility: hidden;
+    -webkit-transition: top 0.3s ease 0s, visibility 0.3s ease 0s;
+    transition: top 0.3s ease 0s, visibility 0.3s ease 0s;
+    z-index: 1001;
+    color: var(--menu-text-color, #006363);
+    background-color: var(--burger-menu-bg, #eacda4);
+  }
+  [data-menu] a {
+    color: inherit;
+  }
+  [data-menu].active {
+    top: 0;
+    visibility: visible;
+  }
+  [data-menu-list] > * {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active), (min-width: 0\0 ) {
   body {
     width: 100vw;
