@@ -10,6 +10,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include smalltablet {
+        width: 300px;
+        // display: flex;
+        // flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    // @include smalltablet {
+    //     // flex-direction: column-reverse;
+    // }
 }
 .service {
     color: #2e2e2e;
@@ -17,6 +28,9 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 57px;
+    @include mobile {
+        font-size: 32px;
+    }
 }
 .delivery {
     display: flex;
@@ -24,6 +38,9 @@
     align-items: center;
     gap: 118px;
     margin-bottom: 110px;
+    @include tablet {
+        flex-direction: column;
+    }
 }
 .delivery__service {
     display: flex;

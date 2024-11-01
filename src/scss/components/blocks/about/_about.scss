@@ -24,10 +24,24 @@
     justify-content: space-between;
     margin-top: rem(40px);
     background-color: #fffefc;
+    @include mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    @include smalltablet {
+        flex-direction: column-reverse;
+    }
 }
 .about__left {
     margin-top: 140px;
     width: rem(560px);
+    @include mobile {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }
 .about__menu {
     display: flex;
@@ -53,6 +67,9 @@
     font-weight: 800;
     // line-height: 60px; /* 115.385% */
     @include fontface("Gilroy", "Gilroy-ExtraBold", 800, normal);
+    @include mobile {
+        font-size: 48px;
+    }
 }
 .about_subtitle {
     margin-top: rem(13px);
@@ -75,4 +92,11 @@
     // object-fit: cover;
     margin-top: -120px;
     margin-left: -150px;
+    @include mobile {
+        width: 500px;
+        margin-left: 30px;
+    }
+    @include smalltablet {
+        // flex-direction: column-reverse;
+    }
 }

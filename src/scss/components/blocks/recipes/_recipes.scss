@@ -1,4 +1,5 @@
 @use "../../../tools/vars/index" as *;
+@use "../../../tools/mixins/index" as *;
 
 .recipes__wrapper {
     padding-top: 87px;
@@ -35,14 +36,20 @@
     font-weight: 700;
     margin-bottom: 57px;
 }
-// .recipes__img {
-// }
+.recipes__img {
+    @include mobile {
+        display: none;
+    }
+}
 .recipes__cards {
     margin-bottom: 55px;
     padding-top: 74px;
     display: flex;
     gap: 54px;
     // background: $orangeBackGroundBtn;
+    @include tablet {
+        flex-direction: column;
+    }
 }
 .card {
     background-color: #fff;
@@ -56,6 +63,9 @@
     justify-content: space-between;
     height: 120px;
     padding: 0 10px;
+    // @include tablet {
+    //     flex-direction: column;
+    // }
 }
 .card__left {
     display: flex;

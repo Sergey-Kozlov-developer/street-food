@@ -7,9 +7,22 @@
     justify-content: start;
     margin-top: rem(40px);
     background-color: #fffefc;
+    @include mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    @include smalltablet {
+        flex-direction: column-reverse;
+    }
 }
 .home__left {
     width: rem(590px);
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .line {
@@ -20,6 +33,10 @@
     width: 52px;
     height: 52px;
     flex-shrink: 0;
+    @include mobile {
+        width: 38px;
+        height: 38px;
+    }
 }
 .home__title {
     color: #232323;
@@ -29,6 +46,9 @@
     font-weight: 800;
     line-height: 108px;
     @include fontface("Gilroy", "Gilroy-ExtraBold", 800, normal);
+    @include mobile {
+        font-size: 48px;
+    }
 }
 .home_subtitle {
     margin-top: rem(13px);
@@ -56,4 +76,13 @@
 }
 .home__right {
     // box-shadow: $shadowBtn;
+    @include mobile {
+        display: none;
+        width: 200px;
+        margin-left: -620px;
+    }
+    @include smalltablet {
+        // display: inline;
+        margin-left: -220px;
+    }
 }
